@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: private-reg
+spec:
+  containers:
+  - name: private-reg-container
+    image: ewr.vultrcr.com/baeumrepository/baeum-front:latest
+    ports: 
+      - containerPort: 3000
+        protocol: TCP
+
+  imagePullSecrets:
+  - name: regcred
+

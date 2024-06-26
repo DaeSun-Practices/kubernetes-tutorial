@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  name: vultr-cr-credentials
+data:
+  .dockerconfigjson: eyJhdXRocyI6eyJld3IudnVsdHJjci5jb20iOnsiYXV0aCI6ImNtOWliM1FrWW1GbGRXMXlaWEJ2YzJsMGIzSjVLMk0xWkRkbU1qQmhMV0ZsTkRZdE5HTTVaUzA0TXpjNUxUVTBOelEyWlRoaFpUTXlNanBXV2xBNFpUZFlWVmxZTkRKUGVtOVBhemcyTlhSeFdYaEhOV2x1YWtwTGRBPT0ifX19
+type: kubernetes.io/dockerconfigjson
